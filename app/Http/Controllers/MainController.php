@@ -21,6 +21,9 @@ class MainController extends Controller
     public function lista()
     {
 
+        $this->fixtureRepository->createFixture();
+
+        die;
         $matches = $this->matchRepository->getMatches()->where('week_id', 1);
         (new PlayMatch($this->fixtureRepository, $this->matchRepository))->bulk($matches);
     }

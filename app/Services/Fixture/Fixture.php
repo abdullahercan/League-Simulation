@@ -41,9 +41,7 @@ class Fixture
     {
 
         $generatedWeeklyFixtures = [];
-        //loop on weeks to generate all weeks
         for ($i = 1; $i <= $numberOfWeeks; $i++) {
-            //loop on each week number of match to generate them
             for ($j = 1; $j <= $numberOfWeeklyFixtures; $j++) {
 
                 foreach ($allFixtures as &$fixture) {
